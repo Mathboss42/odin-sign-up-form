@@ -27,7 +27,7 @@ img, p, figure, figcaption {
 }
 
 body {
-    background-color: rgb(37, 42, 46);
+    background-color: rgb(37, 44, 46);
     display: flex;
 }
 
@@ -56,7 +56,8 @@ q {
 
 .illustration {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
+    /* max-height: 100%; */
     position: absolute;
 }
 
@@ -74,4 +75,138 @@ figcaption {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+.right-side-container {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+}
+
+.description-container {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.description {
+    margin-bottom: 24px;
+}
+
+.description > p {
+    font-size: 20px;
+    margin: 24px 48px;
+    max-width: 600px;
+}
+
+form {
+    flex: 0 1 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    background-color: rgb(48, 63, 66);
+    flex: 0 0 40%;
+    box-shadow: 5px 5px 5px rgb(28, 39, 41);
+}
+
+.row {
+    display: flex;
+    padding: 24px 24px 12px 24px;
+}
+
+.row:last-child {
+    padding-bottom: 24px;
+}
+
+.row:last-child > p {
+    font-size: 12px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 48px;
+}
+
+button {
+    font-size: 24px;
+    color: #fcef03;
+    /* background-color: rgba(0, 238, 255, 0.39); */
+    background: linear-gradient(180deg, rgb(13, 117, 158) 0%, rgb(14, 173, 179) 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    box-shadow: 2px 2px 5px rgb(28, 39, 41);
+}
+
+input {
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    height: 24px;
+    width: 200px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid rgb(84, 213, 218);
+    box-shadow: 2px 2px 5px rgb(28, 39, 41);
+}
+
+button:hover {
+    background: linear-gradient(180deg, rgb(88, 183, 196) 0%, rgb(84, 213, 218) 100%);
+}
+
+button:active {
+    background: linear-gradient(180deg, rgb(5, 80, 90) 0%, rgb(9, 119, 122) 100%);
+    box-shadow: inset 2px 2px 5px rgb(17, 30, 32);
+}
+
+label {
+    color: #d0d3d8;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+label::after {
+    content: '*';
+}
+
+.submit-container > * {
+    margin: 48px;
+}
+
+.submit-container > p {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+a {
+    color: #7dabff;
+}
+
+a:visited {
+    color: #9a6eff;
+}
+
+.row:nth-child(3) {
+    position: relative;
+}
+
+.row.no-match::after {
+    content: '⚠ Passwords do not match';
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    bottom: -2px;
+}
+
+.no-match {
+    border-color: red;
 }

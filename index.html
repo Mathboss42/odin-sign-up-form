@@ -18,44 +18,49 @@
     </div>
     <div class="right-side-container">
         <div class="description-container">
-            <p>This is not a real online service. But who cares! 
-                A truc merc doesn't need to hear a corpo's two cents, 
-                only thing that matters is eddies. 
-                And the Afterlife is <em>the</em> place to get 'em.
-            </p>
-            <p>So what do you say? Ready to live on the Edge?</p>
+            <div class="description">
+                <p>This is not a real online service. But who cares!
+                    A truc merc doesn't need to hear a corpo's two cents,
+                    only thing that matters is eddies.
+                    And the Afterlife is <em>the</em> place to get 'em.
+                </p>
+                <p>So what do you say? Ready to live on the Edge?</p>
+            </div>
         </div>
         <form action="" method="get">
             <div class="input-container">
                 <div class="row">
                     <div class="column">
-                        <label for="first-name"></label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Johnny">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Johnny" required>
                     </div>
                     <div class="column">
-                        <label for="last-name"></label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Silverhand">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Silverhand" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
-                        <label for="email"></label>
-                        <input type="email" id="first-name" name="first-name" placeholder="jsilverhand@nightcity.com">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="first-name" name="first-name" placeholder="jsilverhand@nightcity.com" required>
                     </div>
                     <div class="column">
-                        <label for="phone-number"></label>
-                        <input type="tel" id="phone-number" name="phone-number" placeholder="(XXX) XXX-XXXX">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="(XXX) XXX-XXXX" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
-                        <label for="password"></label>
-                        <input type="password" id="password" name="password" class="password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="password" required>
                     </div>
                     <div class="column">
-                        <label for="password-confirm"></label>
-                        <input type="password" id="password-confirm" name="password-confirm" class="password-confirm">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm" name="password-confirm" class="password-confirm" required>
                     </div>
+                </div>
+                <div class="row">
+                    <p>* Required</p>
                 </div>
             </div>
             <div class="submit-container">
