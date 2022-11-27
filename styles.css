@@ -1,9 +1,77 @@
-html, body {
+@font-face {
+    font-family: "Play-Regular";
+    src: url("fonts/Play-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Play-Bold";
+    src: url("fonts/Play-Bold.ttf");
+}
+
+* {
+    font-family: "Play-Regular", sans-serif;
+}
+
+html, body, body > * {
+    --img-width: 586px;
     height: 100%;
     margin: 0;
     padding: 0;
+    display: block;
+}
+
+img, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    color: #d8d5d0;
 }
 
 body {
     background-color: rgb(37, 42, 46);
+    display: flex;
+}
+
+.left-side-container {
+    background-color: #d8d5d0;
+    position: relative;
+    flex: 1 1 100%;
+    max-width: var(--img-width);
+}
+
+q {
+    font-family: "Play-Bold", sans-serif;
+    color: #fcef03;
+    font-size: 28px;
+}
+
+/* q::before, q::after {
+    content: '';
+} */
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.illustration {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.heading-bar {
+    position: absolute;
+    max-width: 100%;
+    text-align: center;
+    top: 15%;
+    padding: 10px;
+    background-color: rgba(0, 238, 255, 0.39);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
