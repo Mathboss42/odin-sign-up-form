@@ -13,7 +13,7 @@
 }
 
 html, body, body > * {
-    --img-width: 586px;
+    /* --img-width: 586px; */
     height: 100%;
     margin: 0;
     padding: 0;
@@ -160,7 +160,7 @@ input:focus::placeholder {
 
 input:focus {
     outline: none;
-    border: 3px solid rgb(84, 213, 218);
+    border: 2px solid rgb(84, 213, 218);
     box-shadow: 2px 2px 5px rgb(28, 39, 41);
 }
 
