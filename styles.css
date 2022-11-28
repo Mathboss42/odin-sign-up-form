@@ -215,3 +215,39 @@ a:visited {
 .no-match {
     border-color: red;
 }
+
+@media only screen and (max-width: 700px) {
+    body {
+        display: block;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side-container {
+        /* background-image: none; */
+        background-color: rgb(37, 44, 46);
+        flex: 0 1 20%;
+        min-height: 10vh;
+    }
+
+    .heading-bar {
+        position: static;
+        height: 20vh;
+        overflow: hidden;
+    }
+
+    .row {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    input[name="first-name"],
+    input[name="email"],
+    input[name="password"] {
+        margin-bottom: 24px;
+    }
+
+    figcaption {
+        visibility: hidden;
+    }
+}
