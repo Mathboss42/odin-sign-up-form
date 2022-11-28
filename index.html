@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="left-side-container">
@@ -27,7 +28,7 @@
                 <p>So what do you say? Ready to live on the Edge?</p>
             </div>
         </div>
-        <form action="" method="get">
+        <form action="" method="get" onsubmit="return checkPasswordsOnSubmit()">
             <div class="input-container">
                 <div class="row">
                     <div class="column">
@@ -49,14 +50,14 @@
                         <input type="tel" id="phone-number" name="phone-number" placeholder="(XXX) XXX-XXXX" required>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row passwords">
                     <div class="column">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" class="password" required>
                     </div>
                     <div class="column">
                         <label for="password-confirm">Confirm Password</label>
-                        <input type="password" id="password-confirm" name="password-confirm" class="password-confirm" required>
+                        <input type="password" id="password-confirm" name="password-confirm" class="passwordconfirm" required onkeyup="checkPasswordsOnInput()">
                     </div>
                 </div>
                 <div class="row">
